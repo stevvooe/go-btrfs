@@ -1,4 +1,4 @@
-# go-btrfs
+# go-btrfs (v2)
 
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/containerd/btrfs)](https://pkg.go.dev/github.com/containerd/btrfs)
 [![Build Status](https://github.com/containerd/btrfs/workflows/CI/badge.svg)](https://github.com/containerd/btrfs/actions?query=workflow%3ACI)
@@ -6,9 +6,13 @@
 
 Native Go bindings for btrfs.
 
+* v1 (`release/1.0` branch): legacy version with cgo. Used in containerd 1.5 and before.
+* v2 (`main` branch): modern pure-Go implementation, adopted from [dennwc/btrfs](https://github.com/dennwc/btrfs).
+  Planned to be used in containerd 1.6.
+
 # Status
 
-These are in the early stages. We will try to maintain stability, but please
+v2 codes are in the early stages. We will try to maintain stability, but please
 vendor if you are relying on these directly.
 
 # Contribute
@@ -37,10 +41,10 @@ documentation at https://github.com/kunalkushwaha/ltag
 
 ## Project details
 
-btrfs is a containerd sub-project, licensed under the [Apache 2.0 license](./LICENSE).
-As a containerd sub-project, you will find the:
+containerd/btrfs is a containerd **non-core** sub-project, licensed under the [Apache 2.0 license](./LICENSE).
+As a containerd non-core sub-project, you will find the:
  * [Project governance](https://github.com/containerd/project/blob/master/GOVERNANCE.md),
- * [Maintainers](https://github.com/containerd/project/blob/master/MAINTAINERS),
+ * [Maintainers](./MAINTAINERS),
  * and [Contributing guidelines](https://github.com/containerd/project/blob/master/CONTRIBUTING.md)
 
 information in our [`containerd/project`](https://github.com/containerd/project) repository.
